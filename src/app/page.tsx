@@ -6,7 +6,14 @@ import { motion } from 'framer-motion';
 // --- ANIMATION CONFIGS (Inhe hum niche use karenge) ---
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { 
+      duration: 0.8, 
+      ease: [0.33, 1, 0.68, 1] 
+    } 
+  }
 };
 
 const staggerContainer = {
@@ -19,14 +26,21 @@ const staggerContainer = {
 
 const slideInLeft = {
   hidden: { opacity: 0, x: -60 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
+  visible: { 
+    opacity: 1, 
+    x: 0, 
+    transition: { duration: 0.8, ease: [0.33, 1, 0.68, 1] } 
+  }
 };
 
 const slideInRight = {
   hidden: { opacity: 0, x: 60 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
+  visible: { 
+    opacity: 1, 
+    x: 0, 
+    transition: { duration: 0.8, ease: [0.33, 1, 0.68, 1] } 
+  }
 };
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#FDFCFB] text-[#333] font-sans selection:bg-[#4A5D4E] selection:text-white">
