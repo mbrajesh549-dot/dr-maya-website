@@ -4,19 +4,20 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // --- ANIMATION CONFIGS (Inhe hum niche use karenge) ---
-const fadeInUp = {
+// 1. In variants ko niche diye gaye tarike se rewrite karein
+const fadeInUp: any = {
   hidden: { opacity: 0, y: 30 },
   visible: { 
     opacity: 1, 
     y: 0, 
     transition: { 
       duration: 0.8, 
-      ease: [0.33, 1, 0.68, 1] 
+      ease: "easeOut" 
     } 
   }
 };
 
-const staggerContainer = {
+const staggerContainer: any = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -24,21 +25,21 @@ const staggerContainer = {
   }
 };
 
-const slideInLeft = {
+const slideInLeft: any = {
   hidden: { opacity: 0, x: -60 },
   visible: { 
     opacity: 1, 
     x: 0, 
-    transition: { duration: 0.8, ease: [0.33, 1, 0.68, 1] } 
+    transition: { duration: 0.8, ease: "easeOut" } 
   }
 };
 
-const slideInRight = {
+const slideInRight: any = {
   hidden: { opacity: 0, x: 60 },
   visible: { 
     opacity: 1, 
     x: 0, 
-    transition: { duration: 0.8, ease: [0.33, 1, 0.68, 1] } 
+    transition: { duration: 0.8, ease: "easeOut" } 
   }
 };
 export default function Home() {
